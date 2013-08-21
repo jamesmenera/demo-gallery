@@ -1,0 +1,33 @@
+<! DOCTYPE html >
+<html>
+<head>
+  <title>jQuery Gallery</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+</head>
+<body>
+  <header>
+    <h1>jQuery Gallery</h1>
+    <form id="image_search">
+        <input id="query" type="text" placeholder="images"/>
+        <button id="go">search</button>
+      </form>
+  </header>
+  <section>
+    <aside>
+      <ul id="thumbnails">
+      </ul>
+    </aside>
+    <div id="gallery">
+      <div id="view">
+        <img />
+        <span class="prev"></span>
+        <span class="next"></span>
+      </div>
+      <p id="caption"></p>
+    </div>
+  </section>
+</body>
+</html>

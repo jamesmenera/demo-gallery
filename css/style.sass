@@ -1,0 +1,132 @@
+@import reset
+
+body
+  background:
+    color: #000
+  font:
+    family: 'helvetica', sans-serif
+    size: 30px
+    
+h1
+  color: #fff
+  padding: 25px 10px
+  
+section
+  font:
+    size: 0
+    
+#image_search
+  padding: 20px 10px
+  display: block
+    
+aside, #gallery
+  display: inline-block
+  vertical-align: top
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  font:
+    size: 16px
+  
+aside
+  width: 25%
+  overflow-y: auto
+  
+  ul
+    margin: 0 10px
+    max-height: 600px
+    
+  li
+    display: inline-block
+    padding:
+      right: 10px
+      bottom: 10px
+    max-height: 100px
+    max-width: 150px
+    overflow: hidden
+    
+  img
+    max-height: 100px
+    
+
+    
+#gallery
+  width: 75%
+  display: none
+  
+#view, #caption
+  position: relative
+  max-width: 600px
+  max-height: 600px
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  margin:
+    left: 20px
+  
+#view
+  img
+    width: 600px
+    height: 400px
+    max-width: 600px
+    max-height: 600px
+    background:
+      color: #555
+      
+.prev, .next
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 60px
+  display: block
+  background:
+    color: rgba(0, 0, 0, .1)
+  color: #fff
+  cursor: pointer
+  z-index: 60
+    
+  &:hover
+    background:
+      color: rgba(0, 0, 0, .3)
+      
+  &:after
+    content: ''
+    height: 0
+    width: 0
+    display: block
+    border: 20px solid transparent
+    position: absolute
+    top: 45%
+  
+.prev
+  left: 0
+  
+  &:after
+    border:
+      right: 10px solid rgba(255, 255, 255, .4)
+    left: 0
+  
+.next
+  right: 0
+  
+  &:after
+    border:
+      left: 10px solid rgba(255, 255, 255, .4)
+    right: 0
+
+.active
+  img 
+    border: 3px solid #fff
+  
+#caption
+  padding: 20px 10px
+  margin:
+    top: 10px
+  font:
+    weight: 300px
+    size: 14px
+  background:
+    color: #fff
+  color: #333
+  line-height: 130%
+  z-index: 100
