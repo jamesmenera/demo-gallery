@@ -1,13 +1,13 @@
 $(function(){
   var apiKey = "AIzaSyC1dXS5gGrJ2mhTk1QFWQqQCLxdN9qWmwE",
       cx = '004740881112459665936:uw1suk2hy_s',
-      size = 'medium';
+      size = 'large';
       
       $('#go').click(function(e){
         e.preventDefault();
 
         var query = $('#query').val(),
-            url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image&imgSize=' + size + '&q=' + query;
+            url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image$imgType=photo&imgSize=' + size + '&q=' + query;
         
         $('.thumbnail').remove();
         $('#gallery').css('display', 'inline-block');
