@@ -6,7 +6,7 @@ $(function(){
       cx = '004740881112459665936:uw1suk2hy_s',
       //you can set the size of the expected images
       //reference https://developers.google.com/custom-search/v1/using_rest#imgSize
-      size = 'medium';
+      size = 'large';
       
       //This makes the search box go hit Google API
       //Note I pass in 'e' into the function, this stands for the actual click event
@@ -17,7 +17,7 @@ $(function(){
         //Get the value from the "search" text box to tell it what to search for
         var query = $('#query').val(),
             //This is the google custom search url and will fill in the values from your varaibles above
-            url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image&imgSize=' + size + '&q=' + query;
+            url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image&imgType=photo&imgSize=' + size + '&q=' + query;
         
         //Clear the search sesults if there were any
         $('.thumbnail').remove();
