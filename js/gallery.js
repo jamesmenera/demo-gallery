@@ -8,7 +8,6 @@ $(function(){
 
         var query = $('#query').val(),
             url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image&imgType=photo&imgSize=' + size + '&q=' + query;
-            url = encodeURIComponent(url);
             
         $('.thumbnail').remove();
         $('#gallery').css('display', 'inline-block');
