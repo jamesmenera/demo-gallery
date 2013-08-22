@@ -9,7 +9,7 @@ $(function(){
         var query = $('#query').val(),
             url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image&imgType=photo&imgSize=' + size + '&q=' + query;
             
-        $('.thumbnail').remove();
+        $('#thumbnails li').remove();
         $('#gallery').css('display', 'inline-block');
         
         $.get(url, function(data) {
