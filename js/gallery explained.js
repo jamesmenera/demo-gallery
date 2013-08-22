@@ -1,6 +1,6 @@
 //This is a shorthand version of the jQuery's $(document).ready() function.
 $(function(){
-  //ApiKey = You can get you own API ID by going to http://code.google.com/apis/console and sign in using your gmail account copy and past a broswer api key into this variable
+  //ApiKey = You can get your own API ID by going to http://code.google.com/apis/console and sign in using your gmail account copy and paste a broswer api key into this variable
   var apiKey = "AIzaSyC1dXS5gGrJ2mhTk1QFWQqQCLxdN9qWmwE",
       //cx = Also set up a Custom Search Engine https://www.google.com/cse/all when asked "Sites to Search" type www.google.com/*, then click "Control Panel", Turn "Image Search", refresh your browser, click "Search Engine ID" and copy and paste in this variable
       cx = '004740881112459665936:uw1suk2hy_s',
