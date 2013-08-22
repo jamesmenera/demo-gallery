@@ -12,7 +12,7 @@ or
 Download the zip
 
 ###Step 2:
-Get you own API ID by going to [http://code.google.com/apis/console](http://code.google.com/apis/console) and sign in using your gmail account
+Get your own API ID by going to [http://code.google.com/apis/console](http://code.google.com/apis/console) and sign in using your gmail account
 
 Copy and paste a broswer api key into the "apiKey" variable.
 
@@ -24,7 +24,7 @@ When asked "Sites to Search" type www.google.com/*
 
 Then click "Control Panel"
 
-Turn "Image Search"
+Turn "Image Search" on
 
 Refresh your browser
 
