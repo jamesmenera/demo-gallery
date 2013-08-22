@@ -20,7 +20,7 @@ $(function(){
             url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image&imgType=photo&imgSize=' + size + '&q=' + query;
             
         //Clear the search sesults if there were any
-        $('.thumbnail').remove();
+        $('#thumbnails li').remove();
         //I hide the gallery at first until the search results are back.
         //I could have used .show() if I had needed display: block;, but I needed inline-block so
         //I had to be specific and use .css()
