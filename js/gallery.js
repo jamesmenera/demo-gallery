@@ -7,7 +7,7 @@ $(function(){
         e.preventDefault();
 
         var query = $('#query').val(),
-            url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image$imgType=photo&imgSize=' + size + '&q=' + query;
+            url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image&imgType=photo&imgSize=' + size + '&q=' + query;
         
         $('.thumbnail').remove();
         $('#gallery').css('display', 'inline-block');
