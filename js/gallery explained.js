@@ -18,7 +18,6 @@ $(function(){
         var query = $('#query').val(),
             //This is the google custom search url and will fill in the values from your varaibles above
             url = 'https://www.googleapis.com/customsearch/v1?key=' + apiKey + '&cx=' + cx + '&searchType=image&imgType=photo&imgSize=' + size + '&q=' + query;
-            url = encodeURIComponent(url);
             
         //Clear the search sesults if there were any
         $('.thumbnail').remove();
