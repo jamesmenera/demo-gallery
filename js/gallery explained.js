@@ -84,7 +84,7 @@ $(function(){
             height = data.height,
             //width = Same thing data.width will give us a width
             width = data.width
-            //width = Same thing data.caption will give us a caption
+            //caption = Same thing data.caption will give us a caption
             caption = data.caption;
             
         //Remove the active class from all the thumbnails so you don't have two "active" thumbnails.
